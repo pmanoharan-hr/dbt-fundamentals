@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_stripe__payments
+    description: stagged stripe payment info.
+    columns:
+      - name: payment_id
+        description: Primary Key for payment data.
+        tests:
+          - unique
+          - not_null
+      - name: payment_method
+        description: Payment type
