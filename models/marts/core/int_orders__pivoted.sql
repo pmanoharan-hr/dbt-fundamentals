@@ -12,6 +12,6 @@ select
     {%- if not loop.last -%}
     ,
     {% endif -%}
-    {% endfor -%}
+    {% endfor %}
 from payments
 group by order_id

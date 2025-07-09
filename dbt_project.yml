@@ -18,6 +18,8 @@ test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
+# Ensure the following directories exist or remove them if not needed
+# test-paths: ["tests/generic"]  # Remove or correct if this path does not exist
 
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
